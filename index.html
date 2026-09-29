@@ -896,11 +896,13 @@ footer { text-align:center; font-size:11px; color: var(--text-muted); padding: 2
     </div>
   </header>
 
-  <div id="updateStatus" class="update-status no-print" hidden></div>
-
-  <div class="nav-heading no-print">เมนู</div>
   <div class="dashboard-layout">
   <nav class="tabs no-print" id="tabs" aria-label="ส่วนข้อมูลแดชบอร์ด">
+    <div class="dashboard-nav-brand" aria-label="BCL RM WMS">
+      <span class="dashboard-nav-mark" aria-hidden="true">BCL</span>
+      <span class="dashboard-nav-name">RM WMS <small>RAW MATERIALS</small></span>
+    </div>
+    <div class="nav-heading">เมนูหลัก</div>
     <button class="tab-btn active" data-tab="stock" type="button">🧪 สต๊อกวัตถุดิบ <span class="tab-badge" id="tabBadgeStock">591</span></button>
     <button class="tab-btn" data-tab="floorplan" type="button">🗺️ ผังพื้นที่คลัง <span class="tab-badge">263</span></button>
     <button class="tab-btn" data-tab="qr-labels" type="button">▦ พิมพ์ป้าย QR</button>
@@ -913,6 +915,7 @@ footer { text-align:center; font-size:11px; color: var(--text-muted); padding: 2
     <button class="tab-btn" data-tab="bomsearch" type="button">🔍 ค้นหาวัตถุดิบ (BOM) <span class="tab-badge">526</span></button>
   </nav>
   <main class="dashboard-content" id="mainDashboard" tabindex="-1">
+  <div id="updateStatus" class="update-status no-print" hidden></div>
 
   <!-- ============ TAB: STOCK ============ -->
   <div class="tab-pane" id="pane-stock">
