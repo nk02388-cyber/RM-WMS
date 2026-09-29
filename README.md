@@ -1,6 +1,10 @@
-# RM Stock Control Dashboard
+# RM WMS — ระบบจัดการคลังสินค้าวัตถุดิบของ BIO-COSLAB
 
-แดชบอร์ดควบคุมสต็อกวัตถุดิบ (RM) แบบ static web app เปิดได้ทันทีโดยไม่ต้องล็อกอิน
+RM WMS เป็นระบบจัดการคลังสินค้าวัตถุดิบของ BIO-COSLAB สำหรับดูสต็อก ผังพื้นที่คลัง ค้นหา BOM รับเข้า จัดเก็บ และเบิกจ่าย ผ่าน static web app ที่เปิดได้โดยไม่ต้องล็อกอิน
+
+**เว็บที่เผยแพร่:** [BCL WMS / RM](https://bcl-wms.vercel.app/rm-wms/) · [GitHub Pages](https://nk02388-cyber.github.io/RM-WMS/)
+
+**ซอร์สโค้ด:** [nk02388-cyber/RM-WMS](https://github.com/nk02388-cyber/RM-WMS)
 
 ## เปิดใช้งานในเครื่อง
 
@@ -14,7 +18,7 @@ python -m http.server 8080
 
 ## Deploy
 
-ตั้งค่าไว้สำหรับ Netlify โดย publish จากโฟลเดอร์รากของ repository และไม่ต้องใช้ build command
+GitHub Pages เผยแพร่จากโฟลเดอร์รากของสาขา `main` โดยไม่ต้องใช้ build command เว็บ BCL WMS ส่งเส้นทาง `/rm-wms/` มายังหน้า GitHub Pages นี้ โปรเจกต์ยังมี `netlify.toml` สำหรับกรณี deploy บน Netlify
 
 ## ไฟล์หลัก
 
